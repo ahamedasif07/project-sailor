@@ -38,7 +38,6 @@ const TopNavBar = () => {
             <li className="text-[14px] text-gray-700">compare (0)</li>
           </ul>
         </div>
-        <SailorLogo />
       </div>
     </div>
   );
