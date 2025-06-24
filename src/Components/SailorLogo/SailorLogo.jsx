@@ -17,15 +17,19 @@ const SailorLogo = () => {
           textAnchor="middle"
           className="sailor-animate"
         >
-          SAILOR
+          Sailor
         </text>
 
         {/* Red triangle above 'i' */}
-        <polygon
-          points="285,28 293,10 301,28"
-          fill="red"
-          className="animate-bounce"
-        />
+        <svg viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(27, 19)">
+            <polygon
+              points="285,28 293,10 301,28"
+              fill="red"
+              className="animate-bounce"
+            />
+          </g>
+        </svg>
       </svg>
     </div>
   );
