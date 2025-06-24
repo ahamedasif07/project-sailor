@@ -5,7 +5,7 @@ const SailorLogo = () => {
   return (
     <div className="border-2 border-red-500 inline-block">
       <svg
-        viewBox="0 0 230 95" // 👈 reduced from 600x150
+        viewBox="0 0 218 95" // 👈 reduced from 600x150
         className="w-[220px] md:w-[180px]"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -21,7 +21,7 @@ const SailorLogo = () => {
         </text>
 
         {/* Triangle */}
-        <g transform="translate(-58, 8)">
+        <g transform="translate(-64, 8)">
           <polygon points="157,18 165,0 168,18" className="triangle-animate" />
         </g>
       </svg>
