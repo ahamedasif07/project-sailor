@@ -1,13 +1,16 @@
 import React from "react";
 import SailorLogo from "../SailorLogo/SailorLogo";
 import { CiSearch } from "react-icons/ci";
+import { FaPhoneAlt, FaRegHeart } from "react-icons/fa";
+
+import { BsCart4 } from "react-icons/bs";
 
 const MiddelNav = () => {
   return (
-    <div>
-      <div className="px-4 md:px-[100px] lg:px-[150px]">
+    <div className="flex items-center justify-between px-4 max-w-screen-xl  mx-auto border-y-[1px] border-gray-200 ">
+      <div className="flex items-center gap-[80px] ">
         <SailorLogo />
-        <div>
+        <div className="flex items-center gap-[60px]">
           {/* Search Bar and Dropdown */}
           <div className="flex items-center  bg-[#F6F7F8] rounded-full w-full max-w-md relative overflow-visible z-[10000]">
             <input
@@ -18,47 +21,74 @@ const MiddelNav = () => {
 
             {/* Dropdown Wrapper */}
             <div className="relative w-[450px]">
-              <select className="w-full bg-[#F6F7F8] border-l focus:outline-none focus:ring-0 text-gray-900 py-2 px-3 border-white cursor-pointer absolute z-[10010] bottom-[-18px]">
-                <option className="text-gray-900" value="latest-collection">
+              <select className="w-full bg-[#F6F7F8] border-l focus:outline-none focus:ring-0 text-gray-800 text-[15px] py-2 px-3 border-white cursor-pointer absolute z-[10010] bottom-[-18px]">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="latest-collection"
+                >
                   categories
                 </option>
-                <option className="text-gray-900" value="latest-collection">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="latest-collection"
+                >
                   Latest Collection/25
                 </option>
-                <option className="text-gray-900" value="summer-collection">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="summer-collection"
+                >
                   SUMMER COLLECTION/25
                 </option>
-                <option className="text-gray-900" value="boishakh-collection">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="boishakh-collection"
+                >
                   BOISHAKH COLLECTION/2025
                 </option>
-                <option className="text-gray-900" value="new-arrival">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="new-arrival"
+                >
                   NEW ARRIVAL/25
                 </option>
-                <option className="text-gray-900" value="men">
+                <option className="text-gray-800 text-[15px]" value="men">
                   MEN
                 </option>
-                <option className="text-gray-900" value="women">
+                <option className="text-gray-800 text-[15px]" value="women">
                   WOMEN
                 </option>
-                <option className="text-gray-900" value="kids">
+                <option className="text-gray-800 text-[15px]" value="kids">
                   KID'S
                 </option>
-                <option className="text-gray-900" value="newborn">
+                <option className="text-gray-800 text-[15px]" value="newborn">
                   NEWBORN
                 </option>
-                <option className="text-gray-900" value="footwear">
+                <option className="text-gray-800 text-[15px]" value="footwear">
                   FOOTWEAR
                 </option>
-                <option className="text-gray-900" value="accessories">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="accessories"
+                >
                   ACCESSORIES
                 </option>
-                <option className="text-gray-900" value="spring-2025">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="spring-2025"
+                >
                   SPRING 2025
                 </option>
-                <option className="text-gray-900" value="festive-spotlight">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="festive-spotlight"
+                >
                   FESTIVE SPOT LIGHT
                 </option>
-                <option className="text-gray-900" value="king-collection">
+                <option
+                  className="text-gray-800 text-[15px]"
+                  value="king-collection"
+                >
                   KING COLLECTION
                 </option>
               </select>
@@ -68,6 +98,31 @@ const MiddelNav = () => {
               <CiSearch />
             </button>
           </div>
+          {/* contact us now */}
+          <div className="flex items-center gap-3">
+            <p className="text-[18px]">
+              <FaPhoneAlt />
+            </p>
+            <div>
+              <p className="text-gray-500 text-[13px]">Contact Us Now</p>
+              <p className="font-semibold text-[15px]">01777702000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* favarite and craft icon */}
+      <div className="flex items-center gap-8">
+        <div className="flex items-center gap-3">
+          <p className="text-gray-800">
+            <FaRegHeart />
+          </p>
+          <p className="text-gray-600 text-[14px]">0</p>
+        </div>
+        <div className="flex items-center gap-3">
+          <p className="text-gray-800">
+            <BsCart4 />
+          </p>
+          <p className="text-gray-600 text-[14px]">0</p>
         </div>
       </div>
     </div>

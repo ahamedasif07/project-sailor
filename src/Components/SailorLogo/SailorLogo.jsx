@@ -3,7 +3,7 @@ import "./SailorLogo.css";
 
 const SailorLogo = () => {
   return (
-    <div className="border-2 border-red-500 inline-block">
+    <div className=" inline-block">
       <svg
         viewBox="0 0 218 95" // 👈 reduced from 600x150
         className="w-[220px] md:w-[180px]"

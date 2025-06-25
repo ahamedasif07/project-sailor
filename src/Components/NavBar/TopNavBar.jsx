@@ -28,7 +28,7 @@ const TopNavBar = () => {
 
       {/* Bottom part of top nav */}
       <div className="hidden lg:block">
-        <div className="flex justify-between items-center py-3 px-4 md:px-[100px] lg:px-[150px]">
+        <div className="flex justify-between items-center py-3 px-4 max-w-screen-xl mx-auto ">
           <h4 className="text-[14px] text-gray-700">Sailing Life</h4>
           <ul className="flex items-center gap-5">
             <li className="text-[14px] text-gray-700">log in</li>
