@@ -27,7 +27,7 @@ const TopNavBar = () => {
       </h2>
 
       {/* Bottom part of top nav */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block border-b-[1px] border-gray-200">
         <div className="flex justify-between items-center py-3 px-4 max-w-screen-xl mx-auto ">
           <h4 className="text-[14px] text-gray-700">Sailing Life</h4>
           <ul className="flex items-center gap-5">

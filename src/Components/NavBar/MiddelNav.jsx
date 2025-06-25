@@ -7,7 +7,7 @@ import { BsCart4 } from "react-icons/bs";
 
 const MiddelNav = () => {
   return (
-    <div className="flex items-center justify-between px-4 max-w-screen-xl  mx-auto border-y-[1px] border-gray-200 ">
+    <div className="flex items-center justify-between px-4 max-w-screen-xl  mx-auto border-b-[1px] border-gray-200 ">
       <div className="flex items-center gap-[80px] ">
         <SailorLogo />
         <div className="flex items-center gap-[60px]">
