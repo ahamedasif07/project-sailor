@@ -33,12 +33,12 @@ const BottomNav = () => {
                   {/* Grid content */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full md:w-2/4 text-[14px] text-gray-700">
                     <div>
-                      <h4 className="font-semibold mb-2">MEN</h4>
+                      <h4 className="font-semibold mb-2 text-left">MEN</h4>
+                      <h4 className="font-semibold mb-2 text-left">PANJABI</h4>
                       <ul className="space-y-1">
-                        <li>PANJABI</li>
-                        <li>CLASSIC</li>
-                        <li>FUSION</li>
-                        <li>KABLI SUIT</li>
+                        <li className="text-left text-[12px]">CLASSIC</li>
+                        <li className="text-left text-[12px]">FUSION</li>
+                        <li className="text-left text-[12px]">KABLI SUIT</li>
                       </ul>
                     </div>
                     <div>
