@@ -20,8 +20,8 @@ const BottomNav = () => {
 
               {/* Dropdown */}
               <div
-                className={`absolute left-56 transform -translate-x-1/2 z-[1000] px-[10px] w-[100vw] top-full py-2 rounded-sm mt-[20px] bg-white text-gray-400 shadow-lg
-    duration-300 flex flex-col items-start border-red-500 
+                className={`absolute left-57 transform -translate-x-1/2 z-[1000] px-[10px] w-[99vw] top-full py-2  rounded-sm mt-[7px] bg-white text-gray-400 shadow-lg
+    duration-300 flex flex-col items-start 
     opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-2 transition-all`}
               >
                 <div className="mx-auto w-full px-2 flex flex-col md:flex-row justify-between gap-6 items-start">
@@ -34,37 +34,97 @@ const BottomNav = () => {
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full md:w-2/4 text-[14px] text-gray-700">
                     <div>
                       <h4 className="font-semibold mb-2 text-left">MEN</h4>
+                      {/* panjabi */}
                       <h4 className="font-semibold mb-2 text-left">PANJABI</h4>
                       <ul className="space-y-1">
                         <li className="text-left text-[12px]">CLASSIC</li>
                         <li className="text-left text-[12px]">FUSION</li>
                         <li className="text-left text-[12px]">KABLI SUIT</li>
                       </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">WOMEN</h4>
+                      {/* shirts */}
+                      <h4 className="font-semibold my-2 text-left">SHIRT</h4>
                       <ul className="space-y-1">
-                        <li>KURTI</li>
-                        <li>LONG KURTI</li>
-                        <li>SALWAR SUIT</li>
-                        <li>GOWN</li>
+                        <li className="text-left text-[12px]">
+                          BUSINESS FORMAL SHIRT
+                        </li>
+                        <li className="text-left text-[12px]">
+                          EXECUTIVE FORMAL SHIRT
+                        </li>
+                        <li className="text-left text-[12px]">
+                          FASHION EXPRESS SHIRT
+                        </li>
+                        <li className="text-left text-[12px]">
+                          KNIT DRESS SHIRT
+                        </li>
+                        <li className="text-left text-[12px]">
+                          SMART CASUAL SHIRT
+                        </li>
+                        <li className="text-left text-[12px]">CASUAL SHIRT</li>
+                        <li className="text-left text-[12px]">
+                          CASUAL SHIRT (H/S)
+                        </li>
+                        <li className="text-left text-[12px]">
+                          KNIT CASUAL SHIRT (H/S)
+                        </li>
+                      </ul>
+                      {/* polos */}
+                      <h4 className="font-semibold mb-2 text-left">POLOS</h4>
+                      <ul className="space-y-1">
+                        <li className="text-left text-[12px]">
+                          KNIT BASIC POLO
+                        </li>
+                        <li className="text-left text-[12px]">
+                          KNIT FASHION POLO
+                        </li>
+
+                        <li className="text-left text-[12px]">KABLI SUIT</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">FOOTWEAR</h4>
+                      <h4 className="font-semibold mb-2 text-left">WOMEN</h4>
                       <ul className="space-y-1">
-                        <li>CASUAL SHOE</li>
-                        <li>FASHION LOAFER</li>
-                        <li>SANDAL</li>
-                        <li>FASHION SNEAKER</li>
+                        <li className="text-left text-[12px]">KURTI</li>
+                        <li className="text-left text-[12px]">LONG KURTI</li>
+                        <li className="text-left text-[12px]">SALWAR SUIT</li>
+                        <li className="text-left text-[12px]">GOWN</li>
+                        <li className="text-left text-[12px]">2 PCE</li>
+                        <li className="text-left text-[12px]">LONG TOP</li>
+                        <li className="text-left text-[12px]">SHORT TOP</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">KIDS</h4>
+                      <h4 className="font-semibold mb-2 text-left">FOOTWEAR</h4>
                       <ul className="space-y-1">
-                        <li>NEWBORN</li>
-                        <li>BOY'S COLLECTION</li>
-                        <li>GIRL'S COLLECTION</li>
+                        <li className="text-left text-[12px]">CASUAL SHOE</li>
+                        <li className="text-left text-[12px]">
+                          FASHION LOAFER
+                        </li>
+                        <li className="text-left text-[12px]">SANDAL</li>
+                        <li className="text-left text-[12px]">
+                          FASHION SNEAKER
+                        </li>
+                        <li className="text-left text-[12px]">FORMAL SHOE</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2 text-left">KIDS</h4>
+                      <ul className="space-y-1">
+                        <li className="font-semibold mb-2 text-left">
+                          NEWBORN
+                        </li>
+                        <li className="font-semibold mb-2 text-left">
+                          BOY'S COLLECTION
+                        </li>
+                        <li className="font-semibold mb-2 text-left">
+                          NEWBORN BOY'S COLLECTION
+                        </li>
+                        <li className="font-semibold mb-2 text-left">
+                          GIRL'S COLLECTION
+                        </li>
+                        <li className="font-semibold mb-2 text-left">
+                          NEWBORN GIRL'S COLLECTION
+                        </li>
+                        <li className="font-semibold mb-2 text-left">KID'S</li>
                       </ul>
                     </div>
                   </div>
