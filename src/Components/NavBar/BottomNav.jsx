@@ -4,13 +4,13 @@ import newAraivleDpImg from "../../../public/images/project-sailor-home-page008.
 const BottomNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" ">
+    <div className="hidden lg:block ">
       <div className=" py-2 ">
         <div className="flex items-center justify-center gap-6">
           <h3 className="text-[15px] font-semibold text-gray-700">
             SUMMER COLLECTION/25
           </h3>
-          <div className="relative group w-fit">
+          <div className="relative group   text-center cursor-pointer transition-all duration-200  border-orange-400 hover:border-[#91d36b]  text-white group">
             {/* Trigger */}
             <h3
               onClick={() => setIsOpen(!isOpen)}
@@ -23,16 +23,17 @@ const BottomNav = () => {
             <div
               className={`absolute ${
                 isOpen ? "block" : "hidden"
-              } -left-[538px] top-full w-screen mt-2 bg-white shadow-lg    z-50  px-1 border-2 border-red-500`}
+              } left-56 transform -translate-x-1/2 z-[1000] px-[10px] w-[100vw] top-full py-2 rounded-sm mt-[20px] bg-white text-gray-400 shadow-lg 
+  duration-300 flex flex-col items-start border-red-500`}
             >
-              <div className="max-w-[1440px] mx-auto px-2  flex justify-between gap-6 items-start ">
+              <div className="mx-auto w-full px-2 flex flex-col md:flex-row justify-between gap-6 items-start">
                 {/* Left image */}
-                <div className="max-w-[300px] shrink-0">
+                <div className="max-w-[300px] w-full md:w-1/4 shrink-0">
                   <img className="w-full" src={newAraivleDpImg} alt="Left" />
                 </div>
 
                 {/* Grid content */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-[14px] text-gray-700 flex-1 md:-[300px] lg:w-[500px]">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full md:w-2/4 text-[14px] text-gray-700">
                   <div>
                     <h4 className="font-semibold mb-2">MEN</h4>
                     <ul className="space-y-1">
@@ -71,7 +72,7 @@ const BottomNav = () => {
                 </div>
 
                 {/* Right image */}
-                <div className="max-w-[300px] flex gap-1 shrink-0">
+                <div className="w-full md:w-1/4 flex gap-1 shrink-0">
                   <img className="w-1/2" src={newAraivleDpImg} alt="Right" />
                   <img className="w-1/2" src={newAraivleDpImg} alt="Right" />
                 </div>

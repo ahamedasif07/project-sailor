@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import SailorLogo from "../SailorLogo/SailorLogo";
 
 const TopNavBar = () => {
   const [hideTopTitle, setHideTopTitle] = useState(false);
@@ -17,7 +16,7 @@ const TopNavBar = () => {
     <div>
       {/* Top Title */}
       <h2
-        className={`bg-[#2B2D42] py-[3px] text-gray-200 font-semibold text-center tracking-widest transition-all duration-300 ease-in-out ${
+        className={`bg-[#2B2D42] w-full py-[3px] text-gray-200 font-semibold text-center tracking-widest transition-all duration-300 ease-in-out ${
           hideTopTitle
             ? "opacity-0 translate-y-[-100%]"
             : "opacity-100 translate-y-0"
